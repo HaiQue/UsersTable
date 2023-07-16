@@ -1,0 +1,22 @@
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.TableHeader {
+  font-weight: 600;
+}
+
+.ModelHeader {
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .table-header {
+    display: none;
+  }
+}

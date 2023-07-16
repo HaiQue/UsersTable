@@ -1,0 +1,42 @@
+###
+GET http://localhost:5000/api/users
+
+###
+GET http://localhost:5000/api/users/search?name=John
+
+###
+GET http://localhost:5000/api/users/search?surname=Doe
+
+###
+GET http://localhost:5000/api/users/search?email=johndoe@example.com
+
+###
+GET http://localhost:5000/api/users/search?age=30
+
+###
+GET http://localhost:5000/api/users/64b33727dfd5992974bbcd66
+
+
+
+###
+POST http://localhost:5000/api/users
+content-type: application/json
+
+{
+    "name": "John",
+    "surname": "Doe",
+    "email": "johndoe@example.com",
+    "age": 31
+}
+
+###
+PUT http://localhost:5000/api/users/6440e7bfd6205732c445995c
+content-type: application/json
+
+{
+    "name": "Jane",
+    "surname": "Doe"
+}
+
+###
+DELETE http://localhost:5000/api/users/6440f2c72ebdcc1f479591e5
