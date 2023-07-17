@@ -15,13 +15,7 @@ import {
   StyledButtonContainer,
   StyledLabelInputPair,
 } from "../../pages/styles";
-import { IColorTheme } from "../../shared/color_themes";
-import { StyledChartName, StyledCurrencyUpdatedTime } from "./style";
 import "../../App.css";
-
-interface IUsersProps {
-  theme?: IColorTheme;
-}
 
 interface IUser {
   _id: string;
@@ -31,7 +25,7 @@ interface IUser {
   age: number;
 }
 
-const UsersListOrg = ({ theme }: IUsersProps) => {
+const UsersListOrg = () => {
   const [users, setUsers] = useState<IUser[] | null>(null);
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);

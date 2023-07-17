@@ -1,15 +1,14 @@
 import Footer from "../components/Footer";
 import UsersListOrg from "../components/organisms/UsersListOrg";
 import { StyledMain, StyledSection, StyledSectionContent } from "./styles";
-import { IPageProps } from "./types";
 
-const UsersList = ({ theme, layoutbreakpoint }: IPageProps) => {
+const UsersList = () => {
   return (
     <>
-      <StyledMain layoutbreakpoint={layoutbreakpoint}>
+      <StyledMain>
         <StyledSection>
-          <StyledSectionContent theme={theme}>
-            <UsersListOrg theme={theme} />
+          <StyledSectionContent>
+            <UsersListOrg />
           </StyledSectionContent>
         </StyledSection>
       </StyledMain>

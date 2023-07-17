@@ -96,7 +96,7 @@ export const StyledTable = styled.table`
         content: attr(data-label);
         float: left;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 600;
       }
 
       &:last-child {
